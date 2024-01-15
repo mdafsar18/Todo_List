@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: #f6f6f2;
+        }
+
+        h1 {
+            font-size: normal;
+            font-family: 'Times New Roman', Times, serif;
+            text-decoration: underline;
+        }
+
+        h3,
+        h4 {
+            text-decoration: underline;
+        }
+
+        .jumbotron {
+            background-color: #f6f6f2;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <a class="navbar-brand" href="/home">
+                    Todo
+                </a>
+                <a class="navbar-brand" href="/logout">
+                    Logout
+                </a>
+            </div>
+
+            <h1 class="text-center text-dark">
+                BBC LATEST NEWS UPDATE
+            </h1>
+        </div>
+    </div>
+
+    <div class="container">
+        {% for new, des, i, con in context %}
+        <div class="text-center">
+            <img src="{{i}}" alt="">
+        </div>
+        <h3>News: </h3>
+        <p class="lead">{{new}}</p>
+        <h4>Description:</h4>
+        <p>{{des}}</p>
+        <h4>Content: </h4>
+        <p>{{con}}</p>
+        {% endfor %}
+    </div>
+
+</body>
+
+</html>
