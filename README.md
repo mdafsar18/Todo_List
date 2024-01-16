@@ -1,5 +1,5 @@
 <h1>Todo List With Register and Login page</h1>
-<p>when start the serve first its is visible bashboard/welcome page where a button is given click on and explore the todo list</p>
+<p><b>when start the serve first its is visible bashboard/welcome page where a button is given click on and explore the todo list</p></b>
 <div>step-1 Registeration Page</div>
 <div>step2- Login Page</div>
 <div>step-3 Todo List</div>
